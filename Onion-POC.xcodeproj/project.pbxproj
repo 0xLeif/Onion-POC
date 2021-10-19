@@ -14,6 +14,7 @@
 		5CC7F2BF271E3B5D008BE077 /* Onion_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7F2BE271E3B5D008BE077 /* Onion_POCTests.swift */; };
 		5CC7F2C9271E3B5D008BE077 /* Onion_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7F2C8271E3B5D008BE077 /* Onion_POCUITests.swift */; };
 		5CC7F2CB271E3B5D008BE077 /* Onion_POCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7F2CA271E3B5D008BE077 /* Onion_POCUITestsLaunchTests.swift */; };
+		5CC7F2D9271E3B7F008BE077 /* OnionStash in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC7F2D8271E3B7F008BE077 /* OnionStash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC7F2D9271E3B7F008BE077 /* OnionStash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "Onion-POC";
+			packageProductDependencies = (
+				5CC7F2D8271E3B7F008BE077 /* OnionStash */,
+			);
 			productName = "Onion-POC";
 			productReference = 5CC7F2AA271E3B5B008BE077 /* Onion-POC.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 5CC7F2A1271E3B5B008BE077;
+			packageReferences = (
+				5CC7F2D7271E3B7F008BE077 /* XCRemoteSwiftPackageReference "OnionStash" */,
+			);
 			productRefGroup = 5CC7F2AB271E3B5B008BE077 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CC7F2D7271E3B7F008BE077 /* XCRemoteSwiftPackageReference "OnionStash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/OnionStash";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CC7F2D8271E3B7F008BE077 /* OnionStash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC7F2D7271E3B7F008BE077 /* XCRemoteSwiftPackageReference "OnionStash" */;
+			productName = OnionStash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CC7F2A2271E3B5B008BE077 /* Project object */;
 }
